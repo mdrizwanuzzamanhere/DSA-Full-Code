@@ -85,7 +85,7 @@ class Solution {
 
             cout << endl;
         }
-    }
+    } 
 
     void pyramid(int n) {
         for (int i = 1; i <= n; i++) {
