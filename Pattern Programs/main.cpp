@@ -64,6 +64,7 @@ class Solution {
                 cout << cnt;
                 cnt++;
             }
+            cout << endl;
         }
     }
 
@@ -80,12 +81,15 @@ class Solution {
     void hollow_rectangle(int n) {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
-                cout << "*";
+                if (i == 1 || j == 1 || i == n || j == n)
+                    cout << "*";
+                else
+                    cout << " ";
             }
 
             cout << endl;
         }
-    } 
+    }
 
     void pyramid(int n) {
         for (int i = 1; i <= n; i++) {
@@ -107,7 +111,7 @@ class Solution {
             if (i % 2 == 0)
                 start = 1;  // even
             else
-                start = 0; // odd
+                start = 0;  // odd
 
             for (int j = 0; j < i; j++) {
                 cout << start;
