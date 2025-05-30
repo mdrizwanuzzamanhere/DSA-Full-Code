@@ -166,5 +166,22 @@ class Solution {
             cout << "NOT Palindrome Number\n";
     }
 
-    
+    bool isPrime(int n) {
+        for (int i = 2; i * i <= n; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    bool isArmstrong(int n){
+        int temp = n ; 
+        int sum = 0; 
+
+        while(n!=0){
+                
+        }
+    }
 };
